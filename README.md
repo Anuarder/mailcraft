@@ -8,6 +8,8 @@ Local email template development sandbox. Build, preview, and test HTML email te
 
 **Clone. Start. Send. See your emails instantly.**
 
+https://github.com/user-attachments/assets/dd34981b-2b3e-48a8-a96e-a4d888275d95
+
 ## Why
 
 Building HTML emails is painful. Email clients have quirky rendering engines, and you can't just "open in browser" — you need to see how your email actually looks when received. Mailcraft gives you:
