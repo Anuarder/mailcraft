@@ -1,0 +1,17 @@
+services:
+  mailpit:
+    image: axllent/mailpit:latest
+    ports:
+      - "8025:8025"
+      - "1025:1025"
+
+  app:
+    build: .
+    volumes:
+      - ./send.py:/app/send.py
+      - ./templates:/app/templates
+    depends_on:
+      - mailpit
+    environment:
+      SMTP_HOST: mailpit
+      SMTP_PORT: 1025

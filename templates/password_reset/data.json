@@ -1,0 +1,12 @@
+{
+  "lang": "en",
+  "page_title": "Reset Your Password",
+  "heading": "Reset your password",
+  "body_text": "We received a request to reset the password for your account. Click the button below to choose a new password.",
+  "cta_url": "https://example.com/reset?token=abc123",
+  "cta_text": "Reset Password",
+  "expiry_notice": "This link will expire in 1 hour. If you didn't request a password reset, no action is needed.",
+  "sub_text": "If the button doesn't work, copy and paste this link into your browser: https://example.com/reset?token=abc123",
+  "company_name": "Mailcraft",
+  "footer_text": "You received this email because a password reset was requested for your account."
+}

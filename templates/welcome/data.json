@@ -1,0 +1,11 @@
+{
+  "lang": "en",
+  "page_title": "Welcome",
+  "heading": "Welcome aboard!",
+  "body_text": "We're excited to have you. Your account is all set up and ready to go. Click the button below to get started.",
+  "cta_url": "https://example.com/dashboard",
+  "cta_text": "Get Started",
+  "sub_text": "If you didn't create this account, you can safely ignore this email.",
+  "company_name": "Mailcraft",
+  "footer_text": "You received this email because you signed up for an account."
+}
