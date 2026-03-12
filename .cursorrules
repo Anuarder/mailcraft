@@ -1,0 +1,13 @@
+# Mailcraft — Cursor Rules
+
+The full AI rules for this project are in CLAUDE.md. Read that file for all email HTML rules, template structure, and coding patterns.
+
+Key points:
+- HTML emails use <table> layout, not <div> — no flexbox, no grid, no modern CSS
+- All styles must be inline (style="...")
+- Templates use Jinja2 and extend base.html
+- Each template lives in templates/<name>/ with email.html and data.json
+- Max email width: 600px
+- No JavaScript, no SVG, no <form>, no CSS animations
+- Use padding for spacing, never margin
+- Set font-family on every text element

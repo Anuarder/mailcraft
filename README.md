@@ -176,7 +176,16 @@ HTML emails are not web pages. Key rules:
 
 ## AI-Assisted Development
 
-This project includes a `CLAUDE.md` file with detailed rules for AI-assisted email template creation. If you use Claude, Copilot, or similar tools, they'll follow email HTML best practices automatically.
+This project includes rules for AI coding assistants so they generate email-compatible HTML automatically (table layouts, inline styles, no modern CSS). Rules are provided for:
+
+| Tool | Config file |
+|------|-------------|
+| [Claude Code](https://docs.anthropic.com/en/docs/claude-code) | `CLAUDE.md` |
+| [OpenAI Codex](https://openai.com/index/codex/) | `AGENTS.md` |
+| [GitHub Copilot](https://github.com/features/copilot) | `.github/copilot-instructions.md` |
+| [Cursor](https://cursor.sh/) | `.cursorrules` |
+
+The canonical rules live in `CLAUDE.md` — other files reference the same rules. If your AI tool reads a different config file, copy the rules from `CLAUDE.md`.
 
 ## License
 
