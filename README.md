@@ -1,5 +1,9 @@
 # Mailcraft
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Docker](https://img.shields.io/badge/docker-required-blue?logo=docker)](https://docs.docker.com/get-docker/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Anuarder/mailcraft/pulls)
+
 Local email template development sandbox. Build, preview, and test HTML email templates without any external services.
 
 **Clone. Start. Send. See your emails instantly.**
@@ -186,6 +190,10 @@ This project includes rules for AI coding assistants so they generate email-comp
 | [Cursor](https://cursor.sh/) | `.cursorrules` |
 
 The canonical rules live in `CLAUDE.md` — other files reference the same rules. If your AI tool reads a different config file, copy the rules from `CLAUDE.md`.
+
+---
+
+If you find this useful, give it a ⭐ on [GitHub](https://github.com/Anuarder/mailcraft) — it helps others discover it!
 
 ## License
 
