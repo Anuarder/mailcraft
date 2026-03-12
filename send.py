@@ -59,13 +59,8 @@ def image_to_data_uri(file_path: Path) -> str:
 def render_template(name: str, data: dict) -> str:
     """Render a Jinja2 template with its data context."""
     shared = {
-        "logo_url": "cid:logo",
         "year": "2026",
     }
-
-    logo_path = TEMPLATES_DIR / "assets" / "logo.png"
-    if logo_path.exists():
-        shared["logo_url"] = "cid:logo"
 
     merged = {**shared, **data}
     env = Environment(loader=FileSystemLoader(str(TEMPLATES_DIR)))
@@ -101,10 +96,6 @@ def send_email(name: str, lang: str, html: str, data: dict) -> None:
     msg_alt = MIMEMultipart("alternative")
     msg_alt.attach(MIMEText(html, "html"))
     msg.attach(msg_alt)
-
-    logo_path = TEMPLATES_DIR / "assets" / "logo.png"
-    if logo_path.exists():
-        attach_image(msg, logo_path, "logo")
 
     template_assets = TEMPLATES_DIR / name / "assets"
     if template_assets.exists():
